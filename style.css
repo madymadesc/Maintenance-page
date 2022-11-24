@@ -1,0 +1,133 @@
+body {
+    font-family: 'Teko', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0px;
+  }
+
+  section {
+
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+  }
+
+  h2,
+  p {
+    margin: 0px;
+  }
+
+  h2 {
+    color: #EB8226;
+    font-size: 62px;
+    padding-top: 20px;
+  }
+
+  p {
+    color: #000;
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  a {
+    width: 300px;
+    border-radius: 30px;
+    outline: none;
+    border: 2px solid #28a71add;
+    color: #28a71add;
+    font-size: 34px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 5px 25px;
+  }
+
+  a:hover {
+    color: #fff;
+    border: none;
+    background-color: #28a71add;
+    transition: 1s;
+  }
+
+  /* ============ */
+  .countdown {
+    margin-bottom: 5px;
+    display: flex;
+    font-size: 28px;
+    font-weight: 500;
+  }
+
+  .countdown>div {
+    min-width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #1A1B3A;
+    background-color: #e6e7ee;
+    border: 2px solid #EB8226;
+    box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff;
+    margin-right: 10px;
+    border-radius: 0.55rem;
+  }
+
+  .countdown span {
+    position: relative;
+    display: block;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .countdown span:before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 30px;
+    height: 2px;
+    box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff;
+    border-radius: 0.55rem;
+  }
+
+  /* ============ */
+  @media(max-width: 625px) {
+    h2 {
+      font-size: 45px;
+    }
+
+    p {
+      font-size: 20px;
+
+    }
+
+    svg {
+      width: 493px;
+      height: 305px;
+    }
+  }
+
+  @media(max-width: 492px) {
+    h2 {
+      font-size: 30px;
+    }
+
+    a {
+      font-size: 16px;
+      width: 250px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
